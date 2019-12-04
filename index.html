@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Sky's collection</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- import Jquery library -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- import typeIt.js Jquery plugin -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Navigation section -->
+    <section id="navigation">
+      <div id="topbar">
+        <a href="#skyCollection" class="nav-item">Collection</a>
+        <a href="#aboutMe" class="nav-item">About</a>
+      </div>
+    </section>
+
+    <!-- Landing section -->
+    <section id="LandingCloud" class="section1">
+      <div id="intro"></div>
+    </section>
+
+    <!-- Sky Collection section -->
+    <section id="skyCollection" class="section2">
+      <div id="up-container">
+        <div><img src="assets/images/p1.jpg" alt="" id="first-up"></div>
+        <div><img src="assets/images/p5.jpg" alt="" id="second-up"></div>
+        <div><img src="assets/images/p3.jpg" alt="" id="third-up"></div>
+      </div>
+
+      <div id="down-container">
+        <div><img src="assets/images/p4.jpg" alt="" id="first-down"></div>
+        <div><img src="assets/images/p2.jpg" alt="" id="second-down"></div>
+        <div><img src="assets/images/p6.jpg" alt="" id="third-down"></div>
+      </div>
+
+    </section>
+
+    <!-- AboutMe section -->
+    <section id="aboutMe" class="section3">
+
+      <div id="about">
+        <div id="profile-pic"><img src="assets/images/me.jpg" alt="" width=100%></div>
+
+        <div id="information">
+          <div id="myname"></div>
+          <div id="info-text">
+            <p>I am studying Data Science at UC Berkeley and during my free time,<br>I like to take pictures of the sky that inspire me!<br>Here's a collection of #skygraphs I took overtime,<br>please take a moment to enjoy! Thank you!</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <script type="text/javascript">
+      $("#myname").typeIt({
+        strings: ["Hello", "I'm Dorothy:)", "Welcome to my Sky!"],
+        speed: 50,
+        breakLines: false,
+        autoStart: false
+      });
+    </script>
+
+    <script type="text/javascript">
+      $("#intro").typeIt({
+        strings: "Let's go",
+        speed: 90,
+        autoStart: false
+      });
+    </script>
+
+  </body>
+</html>
