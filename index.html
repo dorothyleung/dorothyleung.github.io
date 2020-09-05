@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>Sky's collection</title>
+    <title>Dorothy Leung</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,45 +10,71 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
     <!-- import Jquery library -->
+    <script src="jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- import typeIt.js Jquery plugin -->
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
   </head>
 
   <body>
 
     <!-- Navigation section -->
-    <section id="navigation">
+    <nav id="navigation">
       <div id="topbar">
-        <a href="#skyCollection" class="nav-item">Collection</a>
-        <a href="#aboutMe" class="nav-item">About</a>
+        <a href="#miniCollection" class="nav-item">Collection</a>
+        <a href="#concept" class="nav-item">Concept</a>
       </div>
-    </section>
+    </nav>
 
     <!-- Landing section -->
     <section id="LandingCloud" class="section1">
       <div id="intro"></div>
     </section>
 
-    <!-- Sky Collection section -->
-    <section id="skyCollection" class="section2">
-      <div id="up-container">
-        <div><img src="assets/images/p1.jpg" alt="" id="first-up"></div>
-        <div><img src="assets/images/p5.jpg" alt="" id="second-up"></div>
-        <div><img src="assets/images/p3.jpg" alt="" id="third-up"></div>
+    <!-- Mini Design Collection section -->
+    <section id="miniCollection" class="section2">
+      <div id="graphics">
+        <img src="assets/images/FamilyLove.png" alt="" id="design-1">
+        <img src="assets/images/FriendshipLove.png" alt="" id="design-2">
+        <img src="assets/images/RomanticLove.png" alt="" id="design-3">
+        <img src="assets/images/SelfLove.png" alt="" id="design-4">
       </div>
 
-      <div id="down-container">
-        <div><img src="assets/images/p4.jpg" alt="" id="first-down"></div>
-        <div><img src="assets/images/p2.jpg" alt="" id="second-down"></div>
-        <div><img src="assets/images/p6.jpg" alt="" id="third-down"></div>
+      <!-- full-screen overlay lightbox -->
+      <div id="lightbox-overlay" class="hidden"></div>
+
+      <!-- lightbox pop-up elements with hidden class -->
+      <div class="lightbox hidden" id="love1">
+        <img src="assets/images/FamilyLove.png" alt="">
+        <div class="content">
+          Love Cycle No.1: born and spoil with family love
+        </div>
       </div>
 
+      <div class="lightbox hidden" id="love2">
+        <img src="assets/images/FriendshipLove.png" alt="">
+        <div class="content">
+          Love Cycle No.2: exploring adolescent with frienship love
+        </div>
+      </div>
+
+      <div class="lightbox hidden" id="love3">
+        <img src="assets/images/RomanticLove.png" alt="">
+        <div class="content">
+          Love Cycle No.3: met someone special with romantic love
+        </div>
+      </div>
+
+      <div class="lightbox hidden" id="love4">
+        <img src="assets/images/SelfLove.png" alt="">
+        <div class="content">
+          Love Cycle No.4: Wisdom of life, key to self love
+        </div>
+      </div>
     </section>
 
-    <!-- AboutMe section -->
-    <section id="aboutMe" class="section3">
+    <!-- Concept section -->
+    <section id="concept" class="section3">
 
       <div id="about">
         <div id="profile-pic"><img src="assets/images/me.jpg" alt="" width=100%></div>
@@ -56,7 +82,11 @@
         <div id="information">
           <div id="myname"></div>
           <div id="info-text">
-            <p>I am studying Data Science at UC Berkeley and during my free time,<br>I like to take pictures of the sky that inspire me!<br>Here's a collection of #skygraphs I took overtime,<br>please take a moment to enjoy! Thank you!</p>
+            <p>This collection conveys a cycle of four kinds of love most of us encounter in life.<br>
+               Through the discovery process, we receive unconditional love from family at the first stage,
+               and as we reach to a certain age, <br> we learn to give love for others like our friends and our other half.<br>
+               Once we have experienced different stages of love, we went through ups and downs, and the last step is to learn from everything we have come across in life<br>
+               to fully understand only by loving ourselves is the key to embrace our true identity and to bring positivity into the world.</p>
           </div>
         </div>
       </div>
@@ -65,7 +95,7 @@
 
     <script type="text/javascript">
       $("#myname").typeIt({
-        strings: ["Hello", "I'm Dorothy:)", "Welcome to my Sky!"],
+        strings: ["Hello", "Here is my concept about the collection", "Welcome to my thoughts!"],
         speed: 50,
         breakLines: false,
         autoStart: false
@@ -74,11 +104,13 @@
 
     <script type="text/javascript">
       $("#intro").typeIt({
-        strings: "Let's go",
+        strings: "Dorothy Leung's Portfolio",
         speed: 90,
         autoStart: false
       });
     </script>
+
+    <script src="assets/js/script.js"></script>
 
   </body>
 </html>
